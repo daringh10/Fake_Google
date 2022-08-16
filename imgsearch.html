@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid ms-auto">
+              <a class="navbar-brand" href="index.html">Google Search Page</a>
+              
+              <div class="topnav-right" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Search</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="imgsearch.html">Image Search</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="advsearchdex.html">Advanced Search</a>
+                  </li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+          <div class="text-center">
+            <a href="imgsearch.html">
+              <img src="img.png" alt="Google Image">
+            </a>
+            <form  action="https://www.google.com/search"
+                   method="get"
+                   target="_blank">
+                <div class="main-text">
+                    <input class="form-control form-control-lg mb-4 mx-auto w-50 mt-5 round"
+                           type="text" id="gsearch"
+                           name="q"
+                           autocomplete="off"
+                           placeholder="Search The Web">
+                    <input type="hidden" name="tbm" value="isch" />
+                    <div class="input-group-append">
+                        <button class="btn btn-primary mx-auto "
+                        type="submit"
+                        id="button-addon2">Search The Web</button>
+                      </div>
+                </div>
+
+            </form>
+        </div>
